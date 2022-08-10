@@ -8,5 +8,84 @@
   </head>
   <body>
     <h1>Forms Introduction</h1>
+    <!--The form tag indicates that everything between opening and closing is part of the form anf can be sent to the database-->
+    <form>
+    <fieldset>
+      <legend><strong>Gather Basic Information</strong></legend>
+    <p>
+      <label for="fname"> First Name: </label>
+      <input id="fname" type="text"
+      name="fname"
+      placeholder="First Name"/>
+    </p>
+    <p>
+      <label for="lname"> Last Name: </label>
+      <input id="lname" type="text"
+      name="lname"
+      placeholder="Last Name"/>
+    </p>
+    <p>
+      <label for="phone">*Phone Number: </label>
+      <input id="phone" type="tel"
+      name="lname"
+      placeholder="1(222)-222-2222"
+      required
+      />
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Enter Your Password</legend>
+    <p>
+      <label for="pass1">Password</label>
+      <input type="password" name="pass1" id="pass1" required>
+    </p>
+    <p>
+      <label for="pass2">Confirm Password:</label>
+      <input type="password" name="pass2" id="pass2" required>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Give Us Your Email and the Date You Want To Reserve</legend>
+  <p>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+  </p>
+  <p>
+      <label for="date">Reservation Date:</label>
+      <input type="date" name="date" id="date" >
+  </p>
+  </fieldset>
+  <fieldset>
+    <legend>Radio Buttons</legend>
+    <h3>Are You a day person or a night person</h3>
+    Day<input type="radio" id="day" name="pickTwo" value="day">
+    Night<input type="radio" id="night" name="pickTwo" value="night" checked>
+  </fieldset>
+  <fieldset>
+    <legend>Check Boxes</legend>
+    <h3>Which of these foods do you like (choose all that apply)</h3>
+    Cereal<input type="checkbox" id="Cereal" name="cereal" value="cereal"><br>
+    Steak<input type="checkbox" id="steak" name="steak" value="steak"><br>
+    Lobster<input type="checkbox" id="lobster" name="lobster" value="lobster"><br>
+    Waffles<input type="checkbox" id="waffles" name="waffles" value="waffles"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Dropdown</legend>
+    <h3>Where do you want to vacation</h3>
+    <select name="vacations" id="vacations">
+      <option>--Please choose one of the following</option>
+      <option value="alaska">Alaska</option>
+      <option value="bora bora">Bora Bora</option>
+      <option value="tulum">Tulum</option>
+      <option value="Hawaii">Hawaii</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Please leave a review</legend>
+    <textarea name="comment" id="" cols="50" rows="20"></textarea>
+  </fieldset>
+  <br>
+  <button type="submit" disabled>Submit</button>
+    </form>
   </body>
 </html>
